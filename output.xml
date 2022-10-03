@@ -1,511 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221003 11:22:21.737" rpa="false" schemaversion="3">
-<suite id="s1" name="TestCases" source="C:\Users\mateu\Downloads\agr_vai\TestCases">
-<suite id="s1-s1" name="01-LoginTests" source="C:\Users\mateu\Downloads\agr_vai\TestCases\01-LoginTests.robot">
-<test id="s1-s1-t1" name="1 - Criar conta e fazer login" line="7">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221003 14:32:02.562" rpa="false" schemaversion="3">
+<suite id="s1" name="01-LoginTests" source="C:\Users\mateu\Downloads\agr_vai\tests\01-LoginTests.robot">
+<test id="s1-t1" name="1 - Criar conta e fazer login" line="7">
 <kw name="Dado que entro no site usando o navegador chrome" library="GlobalSteps" type="SETUP" sourcename="Dado que entro no site usando o navegador ${BROWSER}">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://seubarriga.wcaquino.me/login</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221003 11:22:22.244" level="INFO">Opening browser 'chrome' to base url 'https://seubarriga.wcaquino.me/login'.</msg>
-<status status="PASS" starttime="20221003 11:22:22.243" endtime="20221003 11:22:26.296"/>
+<msg timestamp="20221003 14:32:03.267" level="INFO">Opening browser 'chrome' to base url 'https://seubarriga.wcaquino.me/login'.</msg>
+<status status="PASS" starttime="20221003 14:32:03.266" endtime="20221003 14:32:06.437"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221003 11:22:26.296" endtime="20221003 11:22:26.430"/>
+<status status="PASS" starttime="20221003 14:32:06.438" endtime="20221003 14:32:06.574"/>
 </kw>
-<status status="PASS" starttime="20221003 11:22:22.242" endtime="20221003 11:22:26.431"/>
+<status status="PASS" starttime="20221003 14:32:03.264" endtime="20221003 14:32:06.575"/>
 </kw>
 <kw name="Dado que clico para fazer o cadastro" library="LoginSteps">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Login.BtnSignUp}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:26.435" level="INFO">Clicking element '//a[text()='Novo usuário?']'.</msg>
-<status status="PASS" starttime="20221003 11:22:26.433" endtime="20221003 11:22:26.791"/>
+<msg timestamp="20221003 14:32:06.580" level="INFO">Clicking element '//a[text()='Novo usuário?']'.</msg>
+<status status="PASS" starttime="20221003 14:32:06.576" endtime="20221003 14:32:06.944"/>
 </kw>
-<status status="PASS" starttime="20221003 11:22:26.433" endtime="20221003 11:22:26.792"/>
+<status status="PASS" starttime="20221003 14:32:06.576" endtime="20221003 14:32:06.944"/>
 </kw>
 <kw name="Quando preencho o formulario de cadastro" library="LoginSteps">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Login.NameInput}</arg>
 <arg>${name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:26.796" level="INFO">Typing text 'pedro' into text field '//input[@id='nome']'.</msg>
-<status status="PASS" starttime="20221003 11:22:26.794" endtime="20221003 11:22:26.995"/>
+<msg timestamp="20221003 14:32:06.948" level="INFO">Typing text 'pedro' into text field '//input[@id='nome']'.</msg>
+<status status="PASS" starttime="20221003 14:32:06.946" endtime="20221003 14:32:07.121"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Login.EmailInput}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:26.999" level="INFO">Typing text 'pedro@bola340.com' into text field '//input[@id='email']'.</msg>
-<status status="PASS" starttime="20221003 11:22:26.995" endtime="20221003 11:22:27.172"/>
+<msg timestamp="20221003 14:32:07.124" level="INFO">Typing text 'pedro@bola300.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20221003 14:32:07.122" endtime="20221003 14:32:07.403"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${Login.PasswordInput}</arg>
 <arg>pedro123</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:27.173" level="INFO">Typing password into text field '//input[@id='senha']'.</msg>
-<msg timestamp="20221003 11:22:27.228" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221003 11:22:27.300" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221003 11:22:27.172" endtime="20221003 11:22:27.300"/>
+<msg timestamp="20221003 14:32:07.406" level="INFO">Typing password into text field '//input[@id='senha']'.</msg>
+<msg timestamp="20221003 14:32:07.488" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221003 14:32:07.581" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221003 14:32:07.403" endtime="20221003 14:32:07.582"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Login.SignUp}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:27.302" level="INFO">Clicking element '//input[@value='Cadastrar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:27.301" endtime="20221003 11:22:27.909"/>
+<msg timestamp="20221003 14:32:07.585" level="INFO">Clicking element '//input[@value='Cadastrar']'.</msg>
+<status status="PASS" starttime="20221003 14:32:07.582" endtime="20221003 14:32:08.249"/>
 </kw>
-<status status="PASS" starttime="20221003 11:22:26.792" endtime="20221003 11:22:27.910"/>
+<status status="PASS" starttime="20221003 14:32:06.945" endtime="20221003 14:32:08.251"/>
 </kw>
 <kw name="E preencho o login" library="LoginSteps">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Login.EmailInput}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:27.918" level="INFO">Typing text 'pedro@bola340.com' into text field '//input[@id='email']'.</msg>
-<status status="PASS" starttime="20221003 11:22:27.913" endtime="20221003 11:22:28.073"/>
+<msg timestamp="20221003 14:32:08.261" level="INFO">Typing text 'pedro@bola300.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20221003 14:32:08.258" endtime="20221003 14:32:08.447"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${Login.PasswordInput}</arg>
 <arg>pedro123</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:28.074" level="INFO">Typing password into text field '//input[@id='senha']'.</msg>
-<msg timestamp="20221003 11:22:28.127" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221003 11:22:28.199" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221003 11:22:28.073" endtime="20221003 11:22:28.199"/>
+<msg timestamp="20221003 14:32:08.450" level="INFO">Typing password into text field '//input[@id='senha']'.</msg>
+<msg timestamp="20221003 14:32:08.510" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221003 14:32:08.597" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221003 14:32:08.447" endtime="20221003 14:32:08.597"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Login.BtnSignIn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:28.201" level="INFO">Clicking element '//button[text()='Entrar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:28.199" endtime="20221003 11:22:28.969"/>
+<msg timestamp="20221003 14:32:08.600" level="INFO">Clicking element '//button[text()='Entrar']'.</msg>
+<msg timestamp="20221003 14:32:08.901" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221003 14:32:08.903" level="FAIL">Element with locator '//button[text()='Entrar']' not found.</msg>
+<status status="FAIL" starttime="20221003 14:32:08.598" endtime="20221003 14:32:08.925"/>
 </kw>
-<status status="PASS" starttime="20221003 11:22:27.911" endtime="20221003 11:22:28.969"/>
+<status status="FAIL" starttime="20221003 14:32:08.257" endtime="20221003 14:32:08.927"/>
 </kw>
 <kw name="Entao faço login com sucesso" library="LoginSteps">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//div[text()='Bem vindo, ${name}!']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221003 11:22:29.004" level="INFO">Current page contains element '//div[text()='Bem vindo, pedro!']'.</msg>
-<status status="PASS" starttime="20221003 11:22:28.972" endtime="20221003 11:22:29.004"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:28.971" endtime="20221003 11:22:29.004"/>
+<status status="NOT RUN" starttime="20221003 14:32:08.929" endtime="20221003 14:32:08.929"/>
 </kw>
 <kw name="Fechar o navegador" library="GlobalSteps" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221003 11:22:29.006" endtime="20221003 11:22:31.316"/>
+<status status="PASS" starttime="20221003 14:32:08.932" endtime="20221003 14:32:11.343"/>
 </kw>
-<status status="PASS" starttime="20221003 11:22:29.005" endtime="20221003 11:22:31.317"/>
+<status status="PASS" starttime="20221003 14:32:08.931" endtime="20221003 14:32:11.344"/>
 </kw>
-<status status="PASS" starttime="20221003 11:22:22.241" endtime="20221003 11:22:31.319"/>
+<status status="FAIL" starttime="20221003 14:32:03.260" endtime="20221003 14:32:11.345">Element with locator '//button[text()='Entrar']' not found.</status>
 </test>
-<status status="PASS" starttime="20221003 11:22:21.786" endtime="20221003 11:22:31.328"/>
-</suite>
-<suite id="s1-s2" name="02 - BillTests" source="C:\Users\mateu\Downloads\agr_vai\TestCases\02 - BillTests.robot">
-<test id="s1-s2-t1" name="1 - Cadastrar nova conta" line="7">
-<kw name="First Setup" library="GlobalSteps" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://seubarriga.wcaquino.me/login</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221003 11:22:31.393" level="INFO">Opening browser 'chrome' to base url 'https://seubarriga.wcaquino.me/login'.</msg>
-<status status="PASS" starttime="20221003 11:22:31.392" endtime="20221003 11:22:34.855"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221003 11:22:34.855" endtime="20221003 11:22:34.998"/>
-</kw>
-<kw name="Dado que faço o login" library="LoginSteps">
-<kw name="E faço o login" library="LoginSteps">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${Login.EmailInput}</arg>
-<arg>pedro@bola0.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:35.001" level="INFO">Typing text 'pedro@bola0.com' into text field '//input[@id='email']'.</msg>
-<status status="PASS" starttime="20221003 11:22:35.000" endtime="20221003 11:22:35.187"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>${Login.PasswordInput}</arg>
-<arg>pedro123</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:35.189" level="INFO">Typing password into text field '//input[@id='senha']'.</msg>
-<msg timestamp="20221003 11:22:35.253" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221003 11:22:35.328" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221003 11:22:35.187" endtime="20221003 11:22:35.328"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Login.BtnSignIn}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:35.330" level="INFO">Clicking element '//button[text()='Entrar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:35.328" endtime="20221003 11:22:36.001"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:35.000" endtime="20221003 11:22:36.002"/>
-</kw>
-<kw name="Entao faço login com sucesso" library="LoginSteps">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//div[text()='Bem vindo, ${name}!']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221003 11:22:36.039" level="INFO">Current page contains element '//div[text()='Bem vindo, pedro!']'.</msg>
-<status status="PASS" starttime="20221003 11:22:36.007" endtime="20221003 11:22:36.039"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:36.003" endtime="20221003 11:22:36.039"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:34.999" endtime="20221003 11:22:36.039"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:31.391" endtime="20221003 11:22:36.040"/>
-</kw>
-<kw name="Dado clico para cadastrar uma nova conta" library="HomeSteps">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Home.Bills}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:36.044" level="INFO">Clicking element '//a[text()='Contas ']'.</msg>
-<status status="PASS" starttime="20221003 11:22:36.042" endtime="20221003 11:22:36.128"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Home.AddBill}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:36.130" level="INFO">Clicking element '//a[text()='Adicionar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:36.129" endtime="20221003 11:22:36.464"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:36.041" endtime="20221003 11:22:36.464"/>
-</kw>
-<kw name="Quando cadastro uma nova conta" library="BillSteps">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${Login.NameInput}</arg>
-<arg>Conta ${randomNumber()}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:36.472" level="INFO">Typing text 'Conta 440' into text field '//input[@id='nome']'.</msg>
-<status status="PASS" starttime="20221003 11:22:36.468" endtime="20221003 11:22:36.643"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Bill.SaveButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:36.647" level="INFO">Clicking element '//button[text()='Salvar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:36.644" endtime="20221003 11:22:37.158"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:36.467" endtime="20221003 11:22:37.159"/>
-</kw>
-<kw name="Entao a conta deve ser cadastrada" library="BillSteps">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${Bill.BillCreateMsg}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221003 11:22:37.184" level="INFO">Current page contains element '//div[text()='Conta adicionada com sucesso!']'.</msg>
-<status status="PASS" starttime="20221003 11:22:37.162" endtime="20221003 11:22:37.185"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:37.161" endtime="20221003 11:22:37.185"/>
-</kw>
-<kw name="E excluo a conta" library="BillSteps">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Bill.DeleteBill}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:37.187" level="INFO">Clicking element '//span[@class='glyphicon glyphicon-remove-circle']'.</msg>
-<status status="PASS" starttime="20221003 11:22:37.186" endtime="20221003 11:22:37.519"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${Bill.BillDeleteMsg}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221003 11:22:37.547" level="INFO">Current page contains element '//div[text()='Conta removida com sucesso!']'.</msg>
-<status status="PASS" starttime="20221003 11:22:37.520" endtime="20221003 11:22:37.547"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:37.185" endtime="20221003 11:22:37.547"/>
-</kw>
-<kw name="Fechar o navegador" library="GlobalSteps" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221003 11:22:37.549" endtime="20221003 11:22:39.840"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:37.548" endtime="20221003 11:22:39.841"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:31.390" endtime="20221003 11:22:39.843"/>
-</test>
-<test id="s1-s2-t2" name="2 - Deletar uma conta" line="13">
-<kw name="First Setup" library="GlobalSteps" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://seubarriga.wcaquino.me/login</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221003 11:22:39.859" level="INFO">Opening browser 'chrome' to base url 'https://seubarriga.wcaquino.me/login'.</msg>
-<status status="PASS" starttime="20221003 11:22:39.858" endtime="20221003 11:22:42.582"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221003 11:22:42.582" endtime="20221003 11:22:42.718"/>
-</kw>
-<kw name="Dado que faço o login" library="LoginSteps">
-<kw name="E faço o login" library="LoginSteps">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${Login.EmailInput}</arg>
-<arg>pedro@bola0.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:42.721" level="INFO">Typing text 'pedro@bola0.com' into text field '//input[@id='email']'.</msg>
-<status status="PASS" starttime="20221003 11:22:42.719" endtime="20221003 11:22:42.912"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>${Login.PasswordInput}</arg>
-<arg>pedro123</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:42.915" level="INFO">Typing password into text field '//input[@id='senha']'.</msg>
-<msg timestamp="20221003 11:22:42.976" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221003 11:22:43.048" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221003 11:22:42.913" endtime="20221003 11:22:43.048"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Login.BtnSignIn}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:43.051" level="INFO">Clicking element '//button[text()='Entrar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:43.049" endtime="20221003 11:22:43.674"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:42.719" endtime="20221003 11:22:43.674"/>
-</kw>
-<kw name="Entao faço login com sucesso" library="LoginSteps">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//div[text()='Bem vindo, ${name}!']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221003 11:22:43.702" level="INFO">Current page contains element '//div[text()='Bem vindo, pedro!']'.</msg>
-<status status="PASS" starttime="20221003 11:22:43.676" endtime="20221003 11:22:43.702"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:43.675" endtime="20221003 11:22:43.702"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:42.718" endtime="20221003 11:22:43.702"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:39.852" endtime="20221003 11:22:43.703"/>
-</kw>
-<kw name="Dado crio uma nova conta" library="BillSteps">
-<kw name="Quando clico para cadastrar uma nova conta" library="HomeSteps">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Home.Bills}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:43.707" level="INFO">Clicking element '//a[text()='Contas ']'.</msg>
-<status status="PASS" starttime="20221003 11:22:43.705" endtime="20221003 11:22:43.797"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Home.AddBill}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:43.800" level="INFO">Clicking element '//a[text()='Adicionar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:43.797" endtime="20221003 11:22:44.094"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:43.705" endtime="20221003 11:22:44.094"/>
-</kw>
-<kw name="E cadastro uma nova conta" library="BillSteps">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${Login.NameInput}</arg>
-<arg>Conta ${randomNumber()}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:44.103" level="INFO">Typing text 'Conta 0' into text field '//input[@id='nome']'.</msg>
-<status status="PASS" starttime="20221003 11:22:44.096" endtime="20221003 11:22:44.251"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Bill.SaveButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:44.253" level="INFO">Clicking element '//button[text()='Salvar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:44.251" endtime="20221003 11:22:45.089"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:44.095" endtime="20221003 11:22:45.091"/>
-</kw>
-<kw name="Entao a conta deve ser cadastrada" library="BillSteps">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${Bill.BillCreateMsg}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221003 11:22:45.140" level="INFO">Current page contains element '//div[text()='Conta adicionada com sucesso!']'.</msg>
-<status status="PASS" starttime="20221003 11:22:45.094" endtime="20221003 11:22:45.142"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:45.092" endtime="20221003 11:22:45.142"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:43.704" endtime="20221003 11:22:45.142"/>
-</kw>
-<kw name="Quando deleto a conta" library="BillSteps">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Bill.DeleteBill}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:45.146" level="INFO">Clicking element '//span[@class='glyphicon glyphicon-remove-circle']'.</msg>
-<status status="PASS" starttime="20221003 11:22:45.145" endtime="20221003 11:22:45.620"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:45.144" endtime="20221003 11:22:45.620"/>
-</kw>
-<kw name="Entao a conta é deletada" library="BillSteps">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${Bill.BillDeleteMsg}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221003 11:22:45.654" level="INFO">Current page contains element '//div[text()='Conta removida com sucesso!']'.</msg>
-<status status="PASS" starttime="20221003 11:22:45.624" endtime="20221003 11:22:45.654"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:45.623" endtime="20221003 11:22:45.654"/>
-</kw>
-<kw name="Fechar o navegador" library="GlobalSteps" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221003 11:22:45.656" endtime="20221003 11:22:47.971"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:45.655" endtime="20221003 11:22:47.971"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:39.848" endtime="20221003 11:22:47.973"/>
-</test>
-<test id="s1-s2-t3" name="3 - Editar uma conta" line="18">
-<kw name="First Setup" library="GlobalSteps" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://seubarriga.wcaquino.me/login</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221003 11:22:47.987" level="INFO">Opening browser 'chrome' to base url 'https://seubarriga.wcaquino.me/login'.</msg>
-<status status="PASS" starttime="20221003 11:22:47.984" endtime="20221003 11:22:51.167"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221003 11:22:51.167" endtime="20221003 11:22:51.316"/>
-</kw>
-<kw name="Dado que faço o login" library="LoginSteps">
-<kw name="E faço o login" library="LoginSteps">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${Login.EmailInput}</arg>
-<arg>pedro@bola0.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:51.320" level="INFO">Typing text 'pedro@bola0.com' into text field '//input[@id='email']'.</msg>
-<status status="PASS" starttime="20221003 11:22:51.318" endtime="20221003 11:22:51.504"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>${Login.PasswordInput}</arg>
-<arg>pedro123</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:51.506" level="INFO">Typing password into text field '//input[@id='senha']'.</msg>
-<msg timestamp="20221003 11:22:51.565" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221003 11:22:51.636" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221003 11:22:51.504" endtime="20221003 11:22:51.636"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Login.BtnSignIn}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:51.638" level="INFO">Clicking element '//button[text()='Entrar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:51.637" endtime="20221003 11:22:52.661"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:51.317" endtime="20221003 11:22:52.662"/>
-</kw>
-<kw name="Entao faço login com sucesso" library="LoginSteps">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//div[text()='Bem vindo, ${name}!']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221003 11:22:52.693" level="INFO">Current page contains element '//div[text()='Bem vindo, pedro!']'.</msg>
-<status status="PASS" starttime="20221003 11:22:52.665" endtime="20221003 11:22:52.694"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:52.663" endtime="20221003 11:22:52.694"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:51.317" endtime="20221003 11:22:52.694"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:47.982" endtime="20221003 11:22:52.694"/>
-</kw>
-<kw name="Dado crio uma nova conta" library="BillSteps">
-<kw name="Quando clico para cadastrar uma nova conta" library="HomeSteps">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Home.Bills}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:52.699" level="INFO">Clicking element '//a[text()='Contas ']'.</msg>
-<status status="PASS" starttime="20221003 11:22:52.697" endtime="20221003 11:22:52.790"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Home.AddBill}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:52.793" level="INFO">Clicking element '//a[text()='Adicionar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:52.790" endtime="20221003 11:22:53.104"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:52.696" endtime="20221003 11:22:53.105"/>
-</kw>
-<kw name="E cadastro uma nova conta" library="BillSteps">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${Login.NameInput}</arg>
-<arg>Conta ${randomNumber()}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:53.117" level="INFO">Typing text 'Conta 148' into text field '//input[@id='nome']'.</msg>
-<status status="PASS" starttime="20221003 11:22:53.111" endtime="20221003 11:22:53.265"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Bill.SaveButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:53.268" level="INFO">Clicking element '//button[text()='Salvar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:53.266" endtime="20221003 11:22:53.724"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:53.105" endtime="20221003 11:22:53.724"/>
-</kw>
-<kw name="Entao a conta deve ser cadastrada" library="BillSteps">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${Bill.BillCreateMsg}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221003 11:22:53.749" level="INFO">Current page contains element '//div[text()='Conta adicionada com sucesso!']'.</msg>
-<status status="PASS" starttime="20221003 11:22:53.726" endtime="20221003 11:22:53.749"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:53.725" endtime="20221003 11:22:53.750"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:52.695" endtime="20221003 11:22:53.750"/>
-</kw>
-<kw name="Quando edito a conta" library="BillSteps">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Bill.EditBill}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:53.753" level="INFO">Clicking element '//span[@class='glyphicon glyphicon-edit']'.</msg>
-<status status="PASS" starttime="20221003 11:22:53.752" endtime="20221003 11:22:54.081"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${Login.NameInput}</arg>
-<arg>TestEdit</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:54.085" level="INFO">Typing text 'TestEdit' into text field '//input[@id='nome']'.</msg>
-<status status="PASS" starttime="20221003 11:22:54.082" endtime="20221003 11:22:54.218"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Bill.SaveButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:54.219" level="INFO">Clicking element '//button[text()='Salvar']'.</msg>
-<status status="PASS" starttime="20221003 11:22:54.218" endtime="20221003 11:22:54.537"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:53.751" endtime="20221003 11:22:54.537"/>
-</kw>
-<kw name="Entao a conta e editada" library="BillSteps">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${Bill.BillEditMsg}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221003 11:22:54.569" level="INFO">Current page contains element '//div[text()='Conta alterada com sucesso!']'.</msg>
-<status status="PASS" starttime="20221003 11:22:54.539" endtime="20221003 11:22:54.569"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:54.538" endtime="20221003 11:22:54.569"/>
-</kw>
-<kw name="E excluo a conta editada" library="BillSteps">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Bill.DeleteEditBill}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221003 11:22:54.572" level="INFO">Clicking element '//td[text()='TestEdit']/..//span[@class='glyphicon glyphicon-remove-circle']'.</msg>
-<status status="PASS" starttime="20221003 11:22:54.571" endtime="20221003 11:22:54.905"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${Bill.BillDeleteMsg}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221003 11:22:54.932" level="INFO">Current page contains element '//div[text()='Conta removida com sucesso!']'.</msg>
-<status status="PASS" starttime="20221003 11:22:54.908" endtime="20221003 11:22:54.932"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:54.570" endtime="20221003 11:22:54.932"/>
-</kw>
-<kw name="Fechar o navegador" library="GlobalSteps" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221003 11:22:54.934" endtime="20221003 11:22:57.252"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:54.933" endtime="20221003 11:22:57.253"/>
-</kw>
-<status status="PASS" starttime="20221003 11:22:47.979" endtime="20221003 11:22:57.255"/>
-</test>
-<status status="PASS" starttime="20221003 11:22:31.339" endtime="20221003 11:22:57.262"/>
-</suite>
-<status status="PASS" starttime="20221003 11:22:21.739" endtime="20221003 11:22:57.275"/>
+<status status="FAIL" starttime="20221003 14:32:02.567" endtime="20221003 14:32:11.349"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="01-LoginTests">TestCases.01-LoginTests</stat>
-<stat pass="3" fail="0" skip="0" id="s1-s2" name="02 - BillTests">TestCases.02 - BillTests</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="01-LoginTests">01-LoginTests</stat>
 </suite>
 </statistics>
 <errors>
