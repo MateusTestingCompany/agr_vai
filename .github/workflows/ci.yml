@@ -8,6 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run tests
-      uses: ppodgorsek/docker-robot-framework
+      uses: ppodgorsek/docker-robot-framework@v5
+
       with:
         robot_tests_dir: TestCases
