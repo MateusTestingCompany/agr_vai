@@ -31,7 +31,7 @@ jobs:
           # place tests in folder tests or change docker run command accordingly
           # configure -e ROBOT_OPTIONS according to yout tests, or remove it if no special configuration is needed
           run: |
-            docker run \ 
+            docker run \
               -v ${PWD}/reports:/opt/robotframework/reports \
               -v ${PWD}/tests:/opt/robotframework/tests \
               -v ${PWD}/Elements:/opt/robotframework/Elements \
@@ -46,4 +46,4 @@ jobs:
           with:
             name: reports
             # set path to Robot Framework reports reports. Exclude dummy file that is needed because of ppodgorsek image priviledges.
-            path: ${{ github.workspace }}/reports 
+            path: ${{ github.workspace }}/reports
